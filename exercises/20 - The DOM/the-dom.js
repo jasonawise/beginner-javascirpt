@@ -9,5 +9,10 @@
 // CLASSESS!!!!
 const pic = document.querySelector('.nice');
 pic.classList.add('open');
-pic.classList.toggle('round');
 console.log(pic.classList);
+
+function toogleRound() {
+  pic.classList.toggle('round');
+}
+
+pic.addEventListener('click', toogleRound);
